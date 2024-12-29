@@ -9,7 +9,7 @@ const config: Config = {
   tagline: 'Start your open source journey here',
   favicon: 'img/favicon.ico',
 
-  url: 'https://docs-admin.talawa.io',
+  url: 'https://docs-admin.switchmap-ng.io',
   baseUrl: '/',
   deploymentBranch: 'gh-pages',
 
