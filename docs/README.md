@@ -1,16 +1,16 @@
 # Switchmap-NG Documentation Website
 
-[![N|Solid](static/img/markdown/misc/logo.png)](https://github.com/PalisadoesFoundation/docs-admin)
+[![N|Solid](static/img/markdown/misc/logo.png)](https://github.com/PalisadoesFoundation/switchmap-ng-web)
 
 # Installation
 
-This document provides instructions on how to set up and start a running instance of docs-admin website on your local system. The instructions are written to be followed in sequence so make sure to go through each of them step by step without skipping any sections.
+This document provides instructions on how to set up and start a running instance of switchmap-ng-web website on your local system. The instructions are written to be followed in sequence so make sure to go through each of them step by step without skipping any sections.
 
 # Table of Contents
 
 <!-- /TOC -->
 
-- [Developer-Docs Installation](#docs-admin-installation)
+- [Developer-Docs Installation](#switchmap-ng-web-installation)
 - [Table of Contents](#table-of-contents)
 - [Prerequisites for Developers](#prerequisites-for-developers)
   - [Install node.js](#install-nodejs)
@@ -25,7 +25,7 @@ This document provides instructions on how to set up and start a running instanc
 
 # Prerequisites for Developers
 
-The contents of the `docs-admin` repo is used to automatically create [the Switchmap-NG Documentation website](https://docs-admin.talawa.io/). The automation uses [Docusaurus](https://docusaurus.io/docs/), a modern static website generator.
+The contents of the `switchmap-ng-web` repo is used to automatically create [the Switchmap-NG Documentation website](https://switchmap-ng-web.talawa.io/). The automation uses [Docusaurus](https://docusaurus.io/docs/), a modern static website generator.
 
 We recommend that you follow these steps before beginning development work in this repository.
 
@@ -46,8 +46,8 @@ $ yarn -version
 **Note:** Please bear in mind that to install docusaurus in your system, a Node.js version 16.14 or above (which can be checked by running node -v) is required. Other requirements that pertains to the installation of docusaurus can be found [here](https://docusaurus.io/docs/installation)
 
 ```console
-$ git clone https://github.com/PalisadoesFoundation/docs-admin.git
-$ cd docs-admin
+$ git clone https://github.com/PalisadoesFoundation/switchmap-ng-web.git
+$ cd switchmap-ng-web/docs
 $ yarn add docusaurus
 ```
 
