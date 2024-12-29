@@ -1,4 +1,4 @@
-# Talawa-Admin Documentation Website
+# Switchmap-NG Documentation Website
 
 [![N|Solid](static/img/markdown/misc/logo.png)](https://github.com/PalisadoesFoundation/docs-admin)
 
@@ -25,7 +25,7 @@ This document provides instructions on how to set up and start a running instanc
 
 # Prerequisites for Developers
 
-The contents of the `docs-admin` repo is used to automatically create [the Talawa-Admin Documentation website](https://docs-admin.talawa.io/). The automation uses [Docusaurus](https://docusaurus.io/docs/), a modern static website generator.
+The contents of the `docs-admin` repo is used to automatically create [the Switchmap-NG Documentation website](https://docs-admin.talawa.io/). The automation uses [Docusaurus](https://docusaurus.io/docs/), a modern static website generator.
 
 We recommend that you follow these steps before beginning development work in this repository.
 
