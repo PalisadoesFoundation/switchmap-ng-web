@@ -3,7 +3,7 @@
 #
 # NOTE!
 #
-# Please read the README.md file in this directory that defines what should 
+# Please read the README.md file in this directory that defines what should
 # be placed in this file
 #
 ##############################################################################
@@ -14,25 +14,25 @@ name: PUSH Workflow - Website Deployment
 on:
   push:
     branches:
-      - 'develop-postgres'   
-      
+      - "develop"
+
 env:
   CODECOV_UNIQUE_NAME: CODECOV_UNIQUE_NAME-${{ github.run_id }}-${{ github.run_number }}
-  
+
 jobs:
   Deploy-Docusaurus:
     name: Deploy https://docs-admin.talawa.io website
     runs-on: ubuntu-latest
-    # Run only if the develop-postgres branch and not dependabot
+    # Run only if the develop branch and not dependabot
     if: ${{ github.actor != 'dependabot[bot]' }}
     environment:
-      # This "name" has to be the repos' branch that contains 
+      # This "name" has to be the repos' branch that contains
       # the current active website. There must be an entry for
       # the same branch in the PalisadoesFoundation's
-      # "Code and automation > Environments > gigithub-pages"
-      # menu. The branch "name" must match the branch in the 
+      # "Code and automation > Environments > github-pages"
+      # menu. The branch "name" must match the branch in the
       # "on.push.branches" section at the top of this file
-      name: develop-postgres
+      name: develop
       url: https://docs-admin.talawa.io
     steps:
       - uses: actions/checkout@v4
@@ -40,7 +40,7 @@ jobs:
         with:
           node-version: 22
           cache: yarn
-          cache-dependency-path: 'docs/'
+          cache-dependency-path: "docs/"
       - uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.DEPLOY_GITHUB_PAGES }}
@@ -54,4 +54,3 @@ jobs:
           git config --global user.name "gh-actions"
           yarn install --frozen-lockfile
           yarn deploy
- 
