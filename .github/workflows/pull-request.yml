@@ -67,7 +67,7 @@ jobs:
             docs/static/CNAME
             docs/package.json
             docs/sidebar*.js
-            docusaurus.config.js
+            docs/docusaurus.config.js
             docs/babel.config.js
             docs/tsconfig.json
             .coderabbit.yaml
