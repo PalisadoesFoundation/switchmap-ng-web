@@ -8,11 +8,11 @@ const config: Config = {
   title: "Switchmap-NG Web Documentation",
   tagline: "Start building your Switchmap-NG project today",
   favicon: "img/icons/favicon_palisadoes.ico",
-
+  
   url: "https://docs-admin.switchmap-ng.io",
   baseUrl: "/",
   deploymentBranch: "gh-pages",
-
+  
   organizationName: "PalisadoesFoundation", // GitHub org
   projectName: "switchmap-ng-web", // repo name
 
