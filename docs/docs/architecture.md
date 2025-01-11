@@ -5,8 +5,7 @@ sidebar_position: 9
 ---
 # Architecture
 
-This page outlines how This section outlines how to test and contribute
-to `switchmap-ng`.
+This page outlines the architecture and components of `switchmap-ng`
 
 ## Poller
 

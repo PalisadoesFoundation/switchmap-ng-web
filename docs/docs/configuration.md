@@ -77,7 +77,7 @@ poller:
     - group_name: V2
       snmp_version: 2
       snmp_secname:
-      snmp_community: Q6RNgKDntG77xseZ
+      snmp_community: YOUR_SNMP_COMMUNITY
       snmp_port: 161
       snmp_authprotocol:
       snmp_authpassword:
@@ -92,9 +92,9 @@ poller:
         snmp_community:
         snmp_port: 161
         snmp_authprotocol: sha
-        snmp_authpassword: testing123
+        snmp_authpassword: YOUR_AUTH_PASSWORD
         snmp_privprotocol: des
-        snmp_privpassword: secret_password
+        snmp_privpassword: YOUR_PRIV_PASSWORD
 
       - group_name: Remote Sites
         snmp_version: 3
@@ -102,9 +102,9 @@ poller:
         snmp_community:
         snmp_port: 161
         snmp_authprotocol: sha
-        snmp_authpassword: testing123
+        snmp_authpassword: YOUR_AUTH_PASSWORD
         snmp_privprotocol: aes
-        snmp_privpassword: secret_password
+        snmp_privpassword: YOUR_PRIV_PASSWORD
 ```
 
 ## Configuration File Sections
@@ -245,7 +245,6 @@ multiple groups, each with a separate `group_name`. This is how
 | `snmp_version:` | SNMP version. Must be present even if blank. Only SNMP versions 2 and 3 are supported by the project.|
 | `snmp_secname:` | SNMP security name (SNMP version 3 only). Must be present even if blank.|
 | `snmp_community:` | SNMP community (SNMP version 2 only). Must be present even if blank.|
-| `snmp_port:` | SNMP Authprotocol (SNMP version 3 only). Must be present even if blank.|
 | `snmp_authprotocol:` | SNMP AuthPassword (SNMP version 3 only). Must be present even if blank.|
 | `snmp_authpassword:` | SNMP PrivProtocol (SNMP version 3 only). Must be present even if blank.|
 | `snmp_privprotocol:` | SNMP PrivProtocol (SNMP version 3 only). Must be present even if blank.|

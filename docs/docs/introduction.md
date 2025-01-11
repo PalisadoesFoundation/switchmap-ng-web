@@ -1,5 +1,6 @@
 ---
 title: Introduction
+slug: /
 sidebar_position: 1
 sidebar_label: Introduction
 ---
@@ -10,10 +11,10 @@ the status of network connected devices. The information reported
 includes:
 
 1. Open Systems Interconnection model (OSI model) data such as:
-2. Layer 1 information (Network port names, speed, state, neighbors)
-3. Layer 2 information (VLANs, 802.1q trunk links)
-4. Layer 3 information (ARP information)
-5. System status
+    1. Layer 1 information (Network port names, speed, state, neighbors)
+    1. Layer 2 information (VLANs, 802.1q trunk links)
+    1. Layer 3 information (ARP information)
+1. System status
 
 ## Download
 
@@ -32,7 +33,7 @@ Repository](https://github.com/PalisadoesFoundation/switchmap-ng)
 
 4. Threaded polling of devices for data. Fast.
 
-5. Support for Cisco and Juniper gear. More expected to added with
+5. Support for Cisco and Juniper gear. More expected to be added with
     time.
 
 6. Support for SNMPv2 and/or SNMPv3 for all configured network devices.
