@@ -48,21 +48,13 @@ const config: Config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     {
-      themeConfig: {
-        metadata: [
-          {
-            name: "robots",
-            content: "noindex, nofollow",
-          },
-        ],
-      },
       docs: {
         sidebar: {
           hideable: false,
         },
       },
       navbar: {
-        title: "Switchmap-NG Documentation",
+        title: "Switchmap-NG",
         logo: {
           alt: "Talawa Logo",
           src: "img/icons/favicon_palisadoes.ico",
