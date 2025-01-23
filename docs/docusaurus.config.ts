@@ -66,11 +66,13 @@ const config: Config = {
             sidebarId: "tutorialSidebar",
             label: "General",
             position: "left",
+            href: "https://docs.switchmap-ng.io/",
+            target: "_self",
           },
           {
             label: "Web Guide",
             position: "left",
-            href: "https://docs-web.switchmap-ng.io/",
+            href: "/docs",
             target: "_self",
           },
           {
@@ -84,12 +86,6 @@ const config: Config = {
             position: "left",
             href: "https://docs-api.switchmap-ng.io/",
             target: "_self",
-          },
-
-          {
-            label: "Demo",
-            position: "left",
-            href: "http://admin-demo.talawa.io/",
           },
           {
             to: "https://github.com/PalisadoesFoundation",
