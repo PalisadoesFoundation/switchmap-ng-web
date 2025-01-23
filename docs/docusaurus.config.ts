@@ -8,11 +8,11 @@ const config: Config = {
   title: "Switchmap-NG Web Documentation",
   tagline: "Start building your Switchmap-NG project today",
   favicon: "img/icons/favicon_palisadoes.ico",
-  
+
   url: "https://docs-admin.switchmap-ng.io",
   baseUrl: "/",
   deploymentBranch: "gh-pages",
-  
+
   organizationName: "PalisadoesFoundation", // GitHub org
   projectName: "switchmap-ng-web", // repo name
 
@@ -48,13 +48,21 @@ const config: Config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     {
+      themeConfig: {
+        metadata: [
+          {
+            name: "robots",
+            content: "noindex, nofollow",
+          },
+        ],
+      },
       docs: {
         sidebar: {
           hideable: false,
         },
       },
       navbar: {
-        title: "Switchmap-NG Web Documentation",
+        title: "Switchmap-NG Documentation",
         logo: {
           alt: "Talawa Logo",
           src: "img/icons/favicon_palisadoes.ico",
@@ -109,62 +117,6 @@ const config: Config = {
         defaultMode: "light",
         disableSwitch: false,
         respectPrefersColorScheme: false,
-      },
-      footer: {
-        style: "dark",
-        links: [
-          {
-            title: "Community",
-            items: [
-              {
-                label: " Slack",
-                to: "https://github.com/PalisadoesFoundation",
-                className: "footer__icon footer__slack",
-              },
-              {
-                label: " News",
-                to: "https://www.palisadoes.org/news/",
-                className: "footer__icon footer__news",
-              },
-              {
-                label: " Contact Us",
-                to: "https://www.palisadoes.org/contact/",
-                className: "footer__icon footer__contact",
-              },
-            ],
-          },
-          {
-            title: "Social Media",
-            items: [
-              {
-                label: " Twitter",
-                to: "https://twitter.com/palisadoesorg?lang=en",
-                className: "footer__icon footer__twitter",
-              },
-              {
-                label: " Facebook",
-                to: "https://www.facebook.com/palisadoesproject/",
-                className: "footer__icon footer__facebook",
-              },
-              {
-                label: " Instagram",
-                to: "https://www.instagram.com/palisadoes/?hl=en",
-                className: "footer__icon footer__instagram",
-              },
-            ],
-          },
-          {
-            title: "Development",
-            items: [
-              {
-                label: " GitHub",
-                to: "https://github.com/PalisadoesFoundation",
-                className: "footer__icon footer__github",
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} The Palisadoes Foundation, LLC. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
